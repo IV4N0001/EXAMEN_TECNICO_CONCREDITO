@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #393939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.register-container {
+  background-color: #2c2c2c;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.register-container h1 {
+  margin-bottom: 1.25rem;
+  font-size: 1.75rem;
+  color: #00ee9f;
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.register-container input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #3a3a3a;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.register-container input:focus {
+  border-color: #eadb0c;
+  box-shadow: 0 0 0 2px rgba(234, 219, 12, 0.25);
+}
+
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.password-field input {
+  padding-right: 2.5rem;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+/* Botón de submit */
+.register-container button[type="submit"] {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: #dde635;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.register-container button[type="submit"]:hover {
+  background-color: #00ee9f;
+  color: #ffffff;
+}
+
+.register-container .login-link {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: #e7e4e4;
+}
+
+.register-container .login-link a {
+  color: #25efb9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.register-container .login-link a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .register-container {
+    padding: 2rem;
+  }
+  
+  .register-container h1 {
+    font-size: 2rem;
+  }
+  
+  .register-container input {
+    padding: 0.85rem 1.25rem;
+  }
+  
+  .password-field input {
+    padding-right: 3rem;
+  }
+  
+  .toggle-password {
+    right: 1rem;
+  }
+}
