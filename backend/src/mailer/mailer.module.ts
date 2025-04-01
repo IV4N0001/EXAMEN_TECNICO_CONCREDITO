@@ -11,7 +11,7 @@ import { AMQP_PASS, AMQP_USER } from 'src/config/amqp.config';
                 name: 'NOTIFICATION_SERVICE',
                 transport: Transport.RMQ,
                 options: {
-                    urls: [`amqp://${AMQP_USER}:${AMQP_PASS}@rabbitmq:5672`,],
+                    urls: [`amqp://${AMQP_USER}:${AMQP_PASS}@localhost:5672`,],
                     queue: 'email_retry_queue',
                     queueOptions: {
                         durable: true, // Cola persistente
